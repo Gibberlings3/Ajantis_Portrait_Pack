@@ -1,0 +1,258 @@
+//////////////////////////////////////////////////////////////////////////
+// Ajantis Portrait Pack
+//////////////////////////////////////////////////////////////////////////
+
+BACKUP ~AjantisPortraitPack/Backup~
+AUTHOR ~https://www.gibberlings3.net/forums/forum/199-ajantis/~
+
+VERSION ~5~ //220221
+
+README ~AjantisPortraitPack/readme.%LANGUAGE%.txt~ ~AjantisPortraitPack/readme.english.txt~
+
+ALWAYS
+
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @18
+END
+
+/* reading in the OUTER_SPRINT variables */
+
+//Tutu
+ACTION_IF GAME_IS ~tutu tutu_totsc~ THEN BEGIN
+  PRINT @39
+  OUTER_SPRINT ~Ajantisportraitname_small~ ~_JANTISS.bmp~
+  OUTER_SPRINT ~Ajantisportraitname_medium~ ~_JANTISL.bmp~ //L here
+  OUTER_SPRINT ~Ajantisportraitname_large~ ~_JANTISL.bmp~
+END
+ 
+
+//BG1 vanilla
+ACTION_IF GAME_IS ~bg1 totsc~ THEN BEGIN
+  PRINT @41  
+  OUTER_SPRINT ~Ajantisportraitname_small~ ~AJANTISS.bmp~
+  OUTER_SPRINT ~Ajantisportraitname_medium~ ~AJANTISL.bmp~ //L here
+  OUTER_SPRINT ~Ajantisportraitname_large~ ~AJANTISL.bmp~
+END
+
+
+//BGII, EE
+ACTION_IF GAME_IS ~bg2 tob bgt bgee bg2ee eet~ THEN BEGIN
+   
+  ACTION_IF GAME_IS ~bg2 tob~ AND NOT GAME_IS ~bgt~ THEN BEGIN
+    PRINT @42
+    OUTER_SPRINT ~small~ ~S~
+    OUTER_SPRINT ~medium~ ~M~
+    OUTER_SPRINT ~large~ ~L~
+  END
+  ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+     PRINT @40
+    OUTER_SPRINT ~small~ ~S~
+    OUTER_SPRINT ~medium~ ~M~
+    OUTER_SPRINT ~large~ ~L~
+  END
+  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+    PRINT @45
+    OUTER_SPRINT ~small~ ~L~
+    OUTER_SPRINT ~medium~ ~L~
+    OUTER_SPRINT ~large~ ~L~
+  END
+  ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
+    PRINT @47
+    OUTER_SPRINT ~small~ ~L~
+    OUTER_SPRINT ~medium~ ~L~
+    OUTER_SPRINT ~large~ ~L~
+  END
+  ACTION_IF GAME_IS ~eet~ THEN BEGIN
+    PRINT @46
+    OUTER_SPRINT ~small~ ~L~
+    OUTER_SPRINT ~medium~ ~L~
+    OUTER_SPRINT ~large~ ~L~
+  END
+  OUTER_SPRINT ~Ajantisportraitname_small~ ~AJANTISS.bmp~
+  OUTER_SPRINT ~Ajantisportraitname_medium~ ~AJANTISM.bmp~ 
+  OUTER_SPRINT ~Ajantisportraitname_large~ ~AJANTISL.bmp~
+END
+
+//warn about BGII Ajantis mod not being installed (no consequence)
+ACTION_IF (GAME_IS ~bg2ee bg2 tob~ AND NOT (MOD_IS_INSTALLED ~ajantisbg2/setup-ajantisbg2.TP2~ ~0~)) THEN BEGIN  
+  PRINT @38
+END
+
+<<<<<<<< .../copy_portraits.tpa
+
+//copy the portraits
+COPY ~%Ajantisportrait_path%/C#AJAN%small%.bmp~ ~override/%Ajantisportraitname_small%~
+COPY ~%Ajantisportrait_path%/C#AJAN%medium%.bmp~ ~override/%Ajantisportraitname_medium%~
+COPY ~%Ajantisportrait_path%/C#AJAN%large%.bmp~ ~override/%Ajantisportraitname_large%~
+>>>>>>>>
+
+END
+
+
+AUTO_TRA ~AjantisPortraitPack/Translations/%s~
+
+
+LANGUAGE ~English~
+         ~English~
+         ~AjantisPortraitPack/Translations/English/Setup.tra~
+
+LANGUAGE ~Francais~
+         ~French~
+         ~AjantisPortraitPack/Translations/French/Setup.tra~
+
+LANGUAGE ~Deutsch~
+         ~German~
+         ~AjantisPortraitPack/Translations/German/Setup.tra~
+
+
+//BEGIN @14
+//PRINT @15
+//PRINT @16
+/* deprecated
+OUTER_SPRINT ~ajantisportrait~ ~placeholder_value~
+OUTER_WHILE (!(IS_AN_INT ~ajantisportrait~) OR (~ajantisportrait~ > 0xB) OR (~ajantisportrait~ < 0x1)) BEGIN
+PRINT @17
+  ACTION_READLN ~ajantisportrait~
+END
+
+/* reading in the OUTER_SPRINT variables */
+
+ACTION_IF ("ajantisportrait" = 1) THEN BEGIN 
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Amaurea/Heath_Ledger_first~
+PRINT @23
+END
+   
+ACTION_IF ("ajantisportrait" = 2) THEN BEGIN
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Amaurea/Heath_Ledger_final~
+PRINT @24
+END
+
+ACTION_IF ("ajantisportrait" = 3) THEN BEGIN
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/berelinde/shorthair~
+PRINT @36
+END
+
+ACTION_IF ("ajantisportrait" = 4) THEN BEGIN
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/berelinde/longhair~
+PRINT @37
+END
+
+ACTION_IF ("ajantisportrait" = 5) THEN BEGIN
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Azze~
+PRINT @30
+END
+
+ACTION_IF ("ajantisportrait" = 6) THEN BEGIN 
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/wonnimchunha~
+PRINT @31
+END
+      
+ACTION_IF ("ajantisportrait" = 7) THEN BEGIN
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Senka~
+PRINT @32
+END
+
+ACTION_IF ("ajantisportrait" = 8) THEN BEGIN 
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Catlepha/frontal~
+PRINT @33
+END
+      
+ACTION_IF ("ajantisportrait" = 9) THEN BEGIN
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Catlepha/sidefaced~
+PRINT @34
+END
+
+ACTION_IF ("ajantisportrait" = 10) THEN BEGIN
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Casul~
+PRINT @35
+END
+
+ACTION_IF ("ajantisportrait" = 11) THEN BEGIN
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/miloch~
+PRINT @29
+END
+*/
+
+BEGIN @19 DESIGNATED 10 /* Portrait  1 by Amaurea: Heath Ledger as Ajantis (first version) */
+LABEL ajantis_portraitpack-amaurea_first
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Amaurea/Heath_Ledger_first~
+PRINT @23
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @20 DESIGNATED 11 /* Portrait  2 by Amaurea: Heath Ledger as Ajantis (final version) */
+LABEL ajantis_portraitpack-amaurea_final
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Amaurea/Heath_Ledger_final~
+PRINT @24
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @21 DESIGNATED 12 /* Portrait  3 by berelinde (short haired portrait) */
+LABEL ajantis_portraitpack-bereline_short
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/berelinde/shorthair~
+PRINT @36
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @22 DESIGNATED 13 /* Portrait  4 by berelinde (long haired portrait) */
+LABEL ajantis_portraitpack-bereline_long
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/berelinde/longhair~
+PRINT @37
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @25 DESIGNATED 14 /* Portrait  5 by Azguz aka Azze */
+LABEL ajantis_portraitpack-azguz
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Azze~
+PRINT @30
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @26 DESIGNATED 15 /* Portrait  6 by wonnimchunha */
+LABEL ajantis_portraitpack-wonnimchunha
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/wonnimchunha~
+PRINT @31
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @27 DESIGNATED 16 /* Portrait  7 by Senka (younger default portrait) */
+LABEL ajantis_portraitpack-senka
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Senka~
+PRINT @32
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @28 DESIGNATED 17 /* Portrait  8 by Catlepha (front faced portrait) */
+LABEL ajantis_portraitpack-catlepha_frontfaced
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+  OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Catlepha/frontal~
+PRINT @33
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @43 DESIGNATED 18 /* Portrait  9 by Catlepha (side faced portrait) */
+LABEL ajantis_portraitpack-catlepha_sidefaced
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Catlepha/sidefaced~
+PRINT @34
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @46 DESIGNATED 19 /* Portrait 10 by Casul */
+LABEL ajantis_portraitpack-casul
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/Casul~
+PRINT @35
+INCLUDE ~.../copy_portraits.tpa~
+
+BEGIN @48 DESIGNATED 20 /* Portrait 11 by Miloch (default portrait with red tunic) */
+LABEL ajantis_portraitpack-miloch
+	SUBCOMPONENT @14  /* Install custom portrait for Ajantis */
+ OUTER_SPRINT ~Ajantisportrait_path~ ~AjantisPortraitPack/Portraits/miloch~
+PRINT @29
+INCLUDE ~.../copy_portraits.tpa~
+
+
+
+

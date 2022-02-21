@@ -1,0 +1,55 @@
+@14   = ~Install custom portrait for Ajantis~
+/*
+@15   = ~Ajantis Portrait. Which one do you want to install?~
+@16   = ~Please choose a portrait:
+[1]  Portrait  1 by Amaurea: Heath Ledger as Ajantis (first version)
+[2]  Portrait  2 by Amaurea: Heath Ledger as Ajantis (final version)
+[3]  Portrait  3 by berelinde (short haired portrait)
+[4]  Portrait  4 by berelinde (long haired portrait)
+[5]  Portrait  5 by Azguz aka Azze
+[6]  Portrait  6 by wonnimchunha
+[7]  Portrait  7 by Senka (younger default portrait)
+[8]  Portrait  8 by Catlepha (front faced portrait)
+[9]  Portrait  9 by Catlepha (side faced portrait)
+[10] Portrait 10 by Casul 
+[11] Portrait 11 by Miloch (default portrait with red tunic)~
+
+@17   = ~Please select a number between 1 and 11 and press enter.~
+*/
+
+@18   = ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~
+@19   = ~Portrait  1 by Amaurea: Heath Ledger as Ajantis (first version)~
+@20   = ~Portrait  2 by Amaurea: Heath Ledger as Ajantis (final version)~
+@21   = ~Portrait  3 by berelinde (short haired portrait)~
+@22   = ~Portrait  4 by berelinde (long haired portrait)~
+@23   = ~Portrait 1 by Amaurea: Heath Ledger as Ajantis (first version) installed.~
+@24   = ~Portrait 2 by Amaurea: Heath Ledger as Ajantis (final version) installed.~
+@25   = ~Portrait  5 by Azguz aka Azze~
+@26   = ~Portrait  6 by wonnimchunha~
+@27   = ~Portrait  7 by Senka (younger default portrait)~
+@28   = ~Portrait  8 by Catlepha (front faced portrait)~
+@29   = ~Portrait 11 by Miloch installed.~
+@30   = ~Portrait 5 by Azguz aka Azze installed.~
+@31   = ~Portrait 6 by wonnimchunha installed.~
+@32   = ~Portrait 7 by Senka installed.~
+
+@33   = ~Portrait 8 by Catlepha (front faced portrait) installed.~
+@34   = ~Portrait 9 by Catlepha (side faced portrait) installed.~
+@35   = ~Portrait 10 by Casul installed.~
+@36   = ~Portrait 3 by berelinde (short haired portrait) installed.~
+@37   = ~Portrait 4 by berelinde (long haired portrait) installed.~
+@38   = ~Sir Ajantis for BGII mod is not installed.~
+
+
+@39   = ~Baldur's Gate Tutu detected~
+@40   = ~Baldur's Gate Trilogy detected~
+@41   = ~Baldur's Gate detected~
+@42   = ~Baldur's Gate 2 detected~
+@43   = ~Portrait  9 by Catlepha (side faced portrait)~
+@44   = ~Will skip installation of BGII Portraits.~
+
+
+@45   = ~Baldur's Gate: Enhanced Edition detected.~
+@46   = ~Portrait 10 by Casul~
+@47   = ~Baldur's Gate II: Enhanced Edition detected.~
+@48   = ~Portrait 11 by Miloch (default portrait with red tunic)~

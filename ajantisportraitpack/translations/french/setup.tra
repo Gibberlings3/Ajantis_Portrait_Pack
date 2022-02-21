@@ -1,0 +1,53 @@
+@14   = ~Installer un portrait personnalise pour Ajantis~
+/*
+@15   = ~Portrait d'Ajantis. Lequel voulez-vous installer ?~
+@16   = ~Choisissez un portrait :
+[1]  Portrait 1  par Amaurea : Heath Ledger est Ajantis (version initiale)
+[2]  Portrait 2  par Amaurea : Heath Ledger est Ajantis (version finale)
+[3]  Portrait 3  par berelinde (portrait cheveux courts)
+[4]  Portrait 4  par berelinde (portrait cheveux longs)
+[5]  Portrait 5  par Azguz aka Azze
+[6]  Portrait 6  par wonnimchunha
+[7]  Portrait 7  par Senka (portrait par defaut, moins age)
+[8]  Portrait 8  par Catlepha (portrait de face)
+[9]  Portrait 9  par Catlepha (portrait de profil)
+[10] Portrait 10 par Casul 
+[11] Portrait 11 par Miloch (portrait par defaut avec tunique rouge)~
+
+@17   = ~S'il vous plait, choisissez un nombre entre 1 et 11 et appuyez sur Entree.~
+*/
+
+@18   = ~Modmerge ou DLC Merger d'Argent est necessaire avant que des mods puissent etre installes sur ce jeu.~
+@19   = ~Portrait 1  par Amaurea : Heath Ledger est Ajantis (version initiale)~
+@20   = ~Portrait 2  par Amaurea : Heath Ledger est Ajantis (version finale)~
+@21   = ~Portrait 3  par berelinde (portrait cheveux courts)~
+@22   = ~Portrait 4  par berelinde (portrait cheveux longs)~
+@23   = ~Portrait 1  par Amaurea : Heath Ledger est Ajantis (version initiale) installe.~
+@24   = ~Portrait 2  par Amaurea : Heath Ledger est Ajantis (version finale) installe.~
+@25   = ~Portrait 5  par Azguz aka Azze~
+@26   = ~Portrait 6  par wonnimchunha~
+@27   = ~Portrait 7  par Senka (portrait par defaut, moins age)~
+@28   = ~Portrait 8  par Catlepha (portrait de face)~
+@29   = ~Portrait 11 par Miloch installe.~
+@30   = ~Portrait 5 par Azguz aka Azze installe.~
+@31   = ~Portrait 6 par wonnimchunha installe.~
+@32   = ~Portrait 7 par Senka installe.~
+
+@33   = ~Portrait 8 par Catlepha (portrait de face) installe.~
+@34   = ~Portrait 9 par Catlepha (portrait de profil) installe.~
+@35   = ~Portrait 10 par Casul installe.~
+@36   = ~Portrait 3 par berelinde (portrait cheveux courts) installe.~
+@37   = ~Portrait 4 par berelinde (portrait cheveux longs) installe.~
+
+@38   = ~Sir Ajantis for BGII mod n'est pas installe.~
+@39   = ~Une installation de BG1Tutu a ete detectee.~
+@40   = ~Une installation de Baldur's Gate Trilogy a ete detectee.~
+@41   = ~Une installation de Baldur's Gate a ete detectee.~
+@42   = ~Une installation de Baldur's Gate II a ete detectee.~
+@43   = ~Portrait 9  par Catlepha (portrait de profil)~
+@44   = ~No installation de BGII Portraits.~
+
+@45   = ~Baldur's Gate: Enhanced Edition a ete detectee.~
+@46   = ~Portrait 10 par Casul~
+@47   = ~Baldur's Gate II: Enhanced Edition a ete detectee.~
+@48   = ~Portrait 11 par Miloch (portrait par defaut avec tunique rouge)~
