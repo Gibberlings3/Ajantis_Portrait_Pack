@@ -1,7 +1,5 @@
 # Ajantis Portrait Pack
-Adds custom portraits for Ajantis to BG1 and jastey's Ajantis mod in BGII.
-
-The Mod gives a choice of custom portraits for Ajantis. 
+Adds custom portraits for Ajantis.
 
 The portraits will be used for BG1 Ajantis as well as jastey's Sir Ajantis BGII mod, independent on install order.
 
